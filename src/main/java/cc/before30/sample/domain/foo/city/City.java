@@ -1,4 +1,4 @@
-package cc.before30.sample.domain.foo;
+package cc.before30.sample.domain.foo.city;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

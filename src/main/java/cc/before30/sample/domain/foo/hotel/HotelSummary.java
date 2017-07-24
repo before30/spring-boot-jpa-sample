@@ -1,4 +1,6 @@
-package cc.before30.sample.domain.foo;
+package cc.before30.sample.domain.foo.hotel;
+
+import cc.before30.sample.domain.foo.city.City;
 
 /**
  * Created by before30 on 24/07/2017.

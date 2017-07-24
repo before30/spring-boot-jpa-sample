@@ -1,8 +1,8 @@
 package cc.before30.sample.service.foo;
 
-import cc.before30.sample.domain.foo.City;
-import cc.before30.sample.domain.foo.HotelSummary;
-import cc.before30.sample.repository.foo.CitySearchCriteria;
+import cc.before30.sample.domain.foo.city.City;
+import cc.before30.sample.domain.foo.hotel.HotelSummary;
+import cc.before30.sample.domain.foo.city.CitySearchCriteria;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

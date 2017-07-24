@@ -1,8 +1,12 @@
 package cc.before30.sample.service.foo;
 
-import cc.before30.sample.domain.foo.*;
-import cc.before30.sample.repository.foo.HotelRepository;
-import cc.before30.sample.repository.foo.ReviewRepository;
+import cc.before30.sample.domain.foo.city.City;
+import cc.before30.sample.domain.foo.hotel.Hotel;
+import cc.before30.sample.domain.foo.review.RatingCount;
+import cc.before30.sample.domain.foo.review.Review;
+import cc.before30.sample.domain.foo.review.ReviewDetails;
+import cc.before30.sample.domain.foo.hotel.HotelRepository;
+import cc.before30.sample.domain.foo.review.ReviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

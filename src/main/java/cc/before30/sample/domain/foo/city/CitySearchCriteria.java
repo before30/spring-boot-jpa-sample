@@ -1,4 +1,4 @@
-package cc.before30.sample.repository.foo;
+package cc.before30.sample.domain.foo.city;
 
 import lombok.Getter;
 import lombok.Setter;

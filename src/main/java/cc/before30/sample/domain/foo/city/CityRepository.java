@@ -1,6 +1,6 @@
-package cc.before30.sample.repository.foo;
+package cc.before30.sample.domain.foo.city;
 
-import cc.before30.sample.domain.foo.City;
+import cc.before30.sample.domain.foo.city.City;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.Repository;

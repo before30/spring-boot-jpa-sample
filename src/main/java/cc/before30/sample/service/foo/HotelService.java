@@ -1,9 +1,9 @@
 package cc.before30.sample.service.foo;
 
-import cc.before30.sample.domain.foo.City;
-import cc.before30.sample.domain.foo.Hotel;
-import cc.before30.sample.domain.foo.Review;
-import cc.before30.sample.domain.foo.ReviewDetails;
+import cc.before30.sample.domain.foo.city.City;
+import cc.before30.sample.domain.foo.hotel.Hotel;
+import cc.before30.sample.domain.foo.review.Review;
+import cc.before30.sample.domain.foo.review.ReviewDetails;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

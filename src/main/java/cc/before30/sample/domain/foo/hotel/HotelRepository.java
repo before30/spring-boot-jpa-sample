@@ -1,9 +1,9 @@
-package cc.before30.sample.repository.foo;
+package cc.before30.sample.domain.foo.hotel;
 
-import cc.before30.sample.domain.foo.City;
-import cc.before30.sample.domain.foo.Hotel;
-import cc.before30.sample.domain.foo.HotelSummary;
-import cc.before30.sample.domain.foo.RatingCount;
+import cc.before30.sample.domain.foo.city.City;
+import cc.before30.sample.domain.foo.hotel.Hotel;
+import cc.before30.sample.domain.foo.hotel.HotelSummary;
+import cc.before30.sample.domain.foo.review.RatingCount;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;

@@ -1,4 +1,4 @@
-package cc.before30.sample.repository.bar;
+package cc.before30.sample.domain.bar;
 
 import cc.before30.sample.domain.bar.Note;
 

@@ -1,5 +1,7 @@
-package cc.before30.sample.domain.foo;
+package cc.before30.sample.domain.foo.hotel;
 
+import cc.before30.sample.domain.foo.review.Review;
+import cc.before30.sample.domain.foo.city.City;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;

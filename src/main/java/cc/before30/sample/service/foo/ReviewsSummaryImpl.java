@@ -1,7 +1,7 @@
 package cc.before30.sample.service.foo;
 
-import cc.before30.sample.domain.foo.Rating;
-import cc.before30.sample.domain.foo.RatingCount;
+import cc.before30.sample.domain.foo.review.Rating;
+import cc.before30.sample.domain.foo.review.RatingCount;
 
 import java.util.HashMap;
 import java.util.List;
