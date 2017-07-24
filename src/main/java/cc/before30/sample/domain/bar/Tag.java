@@ -25,13 +25,5 @@ public class Tag {
 
     @ManyToMany(mappedBy = "tags")
     private List<Note> notes;
-
-    public Tag(String name, List<Note> notes) {
-        this.name = name;
-        this.notes = notes;
-    }
-
-    public Tag() {
-    }
 }
 

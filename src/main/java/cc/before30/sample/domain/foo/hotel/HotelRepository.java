@@ -1,8 +1,6 @@
 package cc.before30.sample.domain.foo.hotel;
 
 import cc.before30.sample.domain.foo.city.City;
-import cc.before30.sample.domain.foo.hotel.Hotel;
-import cc.before30.sample.domain.foo.hotel.HotelSummary;
 import cc.before30.sample.domain.foo.review.RatingCount;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

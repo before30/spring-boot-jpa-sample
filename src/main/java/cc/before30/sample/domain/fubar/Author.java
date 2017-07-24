@@ -6,12 +6,13 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.List;
 
 /**
  * Created by before30 on 23/07/2017.
  */
 @Entity
-@Table(name = "authors")
+@Table(name = "author")
 @Getter
 @Setter
 @EqualsAndHashCode
@@ -21,37 +22,14 @@ public class Author {
     @Column(name = "ID")
     private Long id;
 
+    @Column
     private String firstName;
 
+    @Column(nullable = false)
     private String lastName;
 
-    private Date dateOfBirth;
+    @OneToMany(mappedBy="author", fetch = FetchType.EAGER)
+    private List<Book> book;
 
-    private Integer yearOfBirth;
 
-    private String address;
-
-    public Author(String firstName, String lastName, Date dateOfBirth, int yearOfBirth, String address) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-        this.yearOfBirth = yearOfBirth;
-        this.address = address;
-    }
-
-    public Author() {
-    }
 }
-
-/*
-CREATE TABLE author (
-  id INT NOT NULL,
-  first_name VARCHAR(50),
-  last_name VARCHAR(50) NOT NULL,
-  date_of_birth DATE,
-  year_of_birth INT,
-  address VARCHAR(50),
-
-  CONSTRAINT pk_t_author PRIMARY KEY (ID)
-);
- */

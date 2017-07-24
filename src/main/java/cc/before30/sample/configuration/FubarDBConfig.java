@@ -49,7 +49,7 @@ public class FubarDBConfig {
 
     @Configuration
     @EnableJpaRepositories(
-            basePackages = "cc.before30.sample.repository.fubar",
+            basePackages = "cc.before30.sample.domain.fubar",
             entityManagerFactoryRef = "entityManagerFactory",
             transactionManagerRef = "transactionManager"
     )

@@ -1,20 +1,21 @@
-INSERT INTO authors VALUES (next value for s_author_id, 'George', 'Orwell', '1903-06-25', 1903, null);
-INSERT INTO authors VALUES (next value for s_author_id, 'Paulo', 'Coelho', '1947-08-24', 1947, null);
+INSERT INTO author VALUES (1, 'George', 'Orwell');
+INSERT INTO author VALUES (2, 'Paulo', 'Coelho');
 
-INSERT INTO books VALUES (1, 1, null, '1984');
-INSERT INTO books VALUES (2, 1, null, 'Animal Farm');
-INSERT INTO books VALUES (3, 2, null, 'O Alquimista');
-INSERT INTO books VALUES (4, 2, null, 'Brida');
+INSERT INTO book VALUES (1, '1984', 1, null);
+INSERT INTO book VALUES (5, 'test', 1, null);
+INSERT INTO book VALUES (2, 'Animal Farm', 1, null);
+INSERT INTO book VALUES (3, 'O Alquimista', 2, 1 );
+INSERT INTO book VALUES (4, 'Brida', 2, null );
 
-INSERT INTO book_stores (name) VALUES
-	('Orell Füssli'),
-	('Ex Libris'),
-	('Buchhandlung im Volkshaus');
+INSERT INTO book_store (name) VALUES
+  ('Orell'),
+  ('Ex Libris'),
+  ('Buchhandlung im Volkshaus');
 
-INSERT INTO books_to_book_stores VALUES
-	('Orell Füssli', 1, 10),
-	('Orell Füssli', 2, 10),
-	('Orell Füssli', 3, 10),
-	('Ex Libris', 1, 1),
-	('Ex Libris', 3, 2),
-	('Buchhandlung im Volkshaus', 3, 1);
+INSERT INTO book_to_book_store VALUES
+  (10, 1, 'Orell'),
+  (10, 2, 'Orell'),
+  (10, 3, 'Orell'),
+  (1, 1, 'Ex Libris'),
+  (3, 2, 'Ex Libris'),
+  (3, 1, 'Buchhandlung im Volkshaus');

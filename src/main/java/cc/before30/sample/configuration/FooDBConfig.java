@@ -41,7 +41,7 @@ public class FooDBConfig {
 
     @Configuration
     @EnableJpaRepositories(
-            basePackages = "cc.before30.sample.repository.foo",
+            basePackages = "cc.before30.sample.domain.foo",
             entityManagerFactoryRef = "entityManagerFactoryFoo",
             transactionManagerRef = "transactionManagerFoo"
     )

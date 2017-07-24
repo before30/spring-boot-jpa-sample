@@ -41,7 +41,7 @@ public class BarDBConfig {
 
     @Configuration
     @EnableJpaRepositories(
-            basePackages = "cc.before30.sample.repository.bar",
+            basePackages = "cc.before30.sample.domain.bar",
             entityManagerFactoryRef = "entityManagerFactoryBar",
             transactionManagerRef = "transactionManagerBar"
     )

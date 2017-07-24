@@ -28,13 +28,4 @@ public class Note {
 
     @ManyToMany
     private List<Tag> tags;
-
-    public Note(String title, String body, List<Tag> tags) {
-        this.title = title;
-        this.body = body;
-        this.tags = tags;
-    }
-
-    public Note() {
-    }
 }
