@@ -15,36 +15,36 @@ import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
 /**
- * Created by before30 on 24/07/2017.
+ * Created by before30 on 25/07/2017.
  */
 @Configuration
-public class FooDBConfig {
+public class BazDBConfig {
     @Bean
-    @ConfigurationProperties(prefix = "foo.datasource")
-    public DataSource fooDataSource() {
+    @ConfigurationProperties(prefix = "baz.datasource")
+    public DataSource bazDataSource() {
         return DataSourceBuilder.create().build();
     }
 
-    @Bean(name = "entityManagerFactoryFoo")
-    public LocalContainerEntityManagerFactoryBean fooEntityManagerFactory(EntityManagerFactoryBuilder builder) {
-        return builder.dataSource(fooDataSource())
-                .packages("cc.before30.sample.domain.foo")
+    @Bean(name = "entityManagerFactoryBaz")
+    public LocalContainerEntityManagerFactoryBean bazEntityManagerFactory(EntityManagerFactoryBuilder builder) {
+        return builder.dataSource(bazDataSource())
+                .packages("cc.before30.sample.domain.baz")
                 .build();
     }
 
-    @Bean(name = "transactionManagerFoo")
-    public PlatformTransactionManager fooTransactionManager(
-            @Qualifier("entityManagerFactoryFoo") EntityManagerFactory entityManagerFactory
+    @Bean(name = "transactionManagerBaz")
+    public PlatformTransactionManager bazTransactionManager(
+            @Qualifier("entityManagerFactoryBaz")EntityManagerFactory entityManagerFactory
     ) {
         return new JpaTransactionManager(entityManagerFactory);
     }
 
     @Configuration
     @EnableJpaRepositories(
-            basePackages = "cc.before30.sample.domain.foo",
-            entityManagerFactoryRef = "entityManagerFactoryFoo",
-            transactionManagerRef = "transactionManagerFoo"
+            basePackages = "cc.before30.sample.domain.baz",
+            entityManagerFactoryRef = "entityManagerFactoryBaz",
+            transactionManagerRef = "transactionManagerBaz"
     )
-    static class fooDbJpaRespositoryConfig {
+    static class bazDbJpaRepositoryConfig {
     }
 }
